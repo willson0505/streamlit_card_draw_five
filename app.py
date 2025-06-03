@@ -8,7 +8,7 @@ st.title("🌟 五張抽牌卡牌系統")
 # 讀取 Excel 牌卡資料
 df = pd.read_excel("梅爾達49張牌卡.xlsx")
 card_names = df["牌卡名稱"].tolist()
-card_descs = dict(zip(df["牌卡名稱"], df["牌卡說明"]))
+card_descs = dict(zip(df["牌卡名稱"],  df["連結"] , df["大局"], df["個體"]))
 
 # 對應五張牌的意義
 positions = [
